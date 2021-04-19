@@ -15,7 +15,6 @@
   }
   &.cards{
     height: auto;
-    padding-bottom: 20px;
     background-color: lightgrey;
     @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
       padding-right: 15%;
@@ -53,7 +52,7 @@
     padding: 0px;
     height: auto;
     @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-      padding: 10%;
+      padding:3% 10%;
       @include flex-r-align-cc;
       flex-wrap: wrap;
     }
@@ -85,15 +84,16 @@
     }
   }
   &.credits{
+    padding: 0 10%;
     background-color: lightgrey;
     height: auto;
     .row{
       @include flex-col-align-cc-left;
       @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-        @include flex-r-align-cc;
+        @include flex-r-jcont-c;
       }
       @media screen and (min-width: $breackpoint-lg){
-        @include flex-r-align-cc;
+        @include flex-r-jcont-c;
       }
       .col-lg-3{
         @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){

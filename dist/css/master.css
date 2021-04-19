@@ -143,10 +143,54 @@ button.common-button {
   justify-content: center;
 }
 
+.flex-r-align-cc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.px_size_12 {
+  font-size: 12px;
+}
+
 .absolute {
   position: absolute;
   top: 11px;
   left: 10px;
+}
+
+.block {
+  display: block;
+}
+
+button.learn_more {
+  border: 2px solid #fff;
+  font-size: 16px;
+  padding: 5px 20px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button.download {
+  display: none;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  padding: 5px 20px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  button.download {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  button.download {
+    display: inline-block;
+  }
 }
 
 .navbar {
@@ -269,6 +313,9 @@ button.common-button {
     padding-left: 25%;
   }
 }
+.wallpaper-jumbo .jumbo-hover .jumbo-content .buttons-jumbo {
+  display: flex;
+}
 .wallpaper-jumbo .jumbo-hover .jumbo-content img {
   height: 65px;
   color: white;
@@ -316,7 +363,6 @@ button.common-button {
 }
 .container.cards {
   height: auto;
-  padding-bottom: 20px;
   background-color: lightgrey;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -370,7 +416,7 @@ button.common-button {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container.learn-sections {
-    padding: 10%;
+    padding: 3% 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -406,6 +452,7 @@ button.common-button {
   font-size: 1.3rem;
 }
 .container.credits {
+  padding: 0 10%;
   background-color: lightgrey;
   height: auto;
 }
@@ -419,7 +466,6 @@ button.common-button {
   .container.credits .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
   }
 }
@@ -427,7 +473,6 @@ button.common-button {
   .container.credits .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
   }
 }
@@ -524,7 +569,7 @@ button.common-button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0;
   }
 }
 @media screen and (min-width: 991px) {
@@ -533,28 +578,27 @@ button.common-button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0;
   }
 }
 .footer .row .col-sm-12 {
   height: 60px;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .footer .row .col-sm-12 {
-    width: calc(100% / 2);
-  }
-}
-@media screen and (min-width: 991px) {
-  .footer .row .col-sm-12 {
-    width: calc(100% / 2);
-  }
+  width: auto;
 }
 .footer .row .col-sm-12 .sponsors {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.footer .row .col-sm-12 .termini {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .footer .row .col-sm-12 .sponsors .termini {
+  .footer .row .col-sm-12 .termini {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -562,13 +606,13 @@ button.common-button {
   }
 }
 @media screen and (min-width: 991px) {
-  .footer .row .col-sm-12 .sponsors .termini {
+  .footer .row .col-sm-12 .termini {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
 }
-.footer .row .col-sm-12 .sponsors .termini span {
+.footer .row .col-sm-12 .termini span {
   color: grey;
 }

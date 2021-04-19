@@ -14,6 +14,11 @@
   display: flex;
   align-items: center;
 }
+@mixin flex-col-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 @mixin flex-col-align-cc{
   display: flex;
   flex-direction: column;
@@ -51,6 +56,11 @@
 @mixin flex-r-sp-ar{
   display: flex;
   justify-content: space-around;
+}
+@mixin flex-r-jcont-c{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 @mixin position-inherit {
   position: inherit;

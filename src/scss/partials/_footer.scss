@@ -11,32 +11,31 @@
   .row{
     @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
       @include flex-r-align-cc;
-      padding: 0 10%;
+      padding: 0;
     }
     @media screen and (min-width: $breackpoint-lg){
       @include flex-r-align-cc;
-      padding: 0 10%;
+      padding: 0;
     }
     .col-sm-12{
       height: 60px;
-      @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-        width: calc(100% / 2);
-      }
-      @media screen and (min-width: $breackpoint-lg){
-        width: calc(100% / 2);
-      }
+      width: auto;
       .sponsors{
-        @include flex-r-sp-ar;
-        .termini{
-          @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-            @include flex-r-align-cc;
-          }
-          @media screen and (min-width: $breackpoint-lg){
-            @include flex-r-align-cc;
-          }
-          span{
-            color: grey;
-          }
+        @include flex-r-align-cc;
+        width: auto;
+      }
+      .termini{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          @include flex-r-align-cc;
+        }
+        @media screen and (min-width: $breackpoint-lg){
+          @include flex-r-align-cc;
+        }
+        span{
+          color: grey;
         }
       }
     }
