@@ -146,6 +146,7 @@ button.common-button {
 .absolute {
   position: absolute;
   top: 11px;
+  left: 10px;
 }
 
 .navbar {
@@ -180,26 +181,11 @@ button.common-button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar .container-fluid .navbar-brand img {
-    position: inherit;
-    transform: translate(0%, -5%);
-    margin-right: 30px;
-  }
-}
 @media screen and (min-width: 991px) {
   .navbar .container-fluid .navbar-brand img {
     position: inherit;
     transform: translate(0%, -5%);
     margin-right: 30px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar .container-fluid .navbar-brand button.left-button {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0%, -50%);
   }
 }
 .navbar .container-fluid .navbar-brand .navbar-collapse {

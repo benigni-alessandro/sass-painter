@@ -16,8 +16,7 @@
       img{
         @include position-center;
         @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-          @include position-inherit;
-          margin-right: 30px;
+
         }
         @media screen and (min-width: $breackpoint-lg){
           @include position-inherit;
@@ -25,10 +24,6 @@
         }
       }
       button.left-button{
-
-        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-        @include position-left ;
-        }
       }
       .navbar-collapse{
         flex-grow: 0;
