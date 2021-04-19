@@ -26,15 +26,16 @@
       }
     button.navbar-toggler{
       color: transparent;
-        @include position-left;
+      @include position-left;
         i.fas.fa-bars{
           color: white;
         }
       }
       .navbar-collapse{
         flex-grow: 0;
+        @include flex-r-align;
         @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-          width: inherit;
+          width: auto;
           display: flex;
           margin-right: 0px;
           flex-grow: 0!important;
