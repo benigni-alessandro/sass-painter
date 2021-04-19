@@ -1,0 +1,64 @@
+@import '_navbar.scss';
+
+.wallpaper-jumbo{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-position: 67% 56%;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  color: white;
+  @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-width: $breackpoint-lg){
+    background-position: center;
+    background-size: cover;
+  }
+  .jumbo-hover{
+    background: rgba(0, 0, 0, .7);
+    height: 100%;
+    @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+      background: transparent;
+    }
+    @media screen and (min-width: $breackpoint-lg){
+      background: transparent;
+    }
+    .jumbo-content{
+      @include flex-col-align-cc;
+      height: 100%;
+      @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+        @include flex-col-align-cc-left;
+        transform: translateX(15%);
+      }
+      @media screen and (min-width: $breackpoint-lg){
+        @include flex-col-align-cc-left;
+        transform: translateX(15%);
+      }
+      img{
+        height: 65px;
+        color: white;
+        margin-bottom: 10px;
+
+      }
+      p{
+        font-size: 23px;
+        font-weight: bolder;
+        &.first-c{
+          margin-bottom: 0px;
+        }
+      }
+      small{
+        font-style: oblique;
+        font-weight: bolder;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          color: #E44760;
+        }
+        @media screen and (min-width: $breackpoint-lg){
+          color: #E44760;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.bg-black{
+  background-color: black;
+}
+.purple{
+  background-color: #2C134A;
+}
+.grey{
+  background-color: #3C3C3C;
+}
+.bg-lightblue{
+  background-color: #1D72BC;
+}
+.lightblue{
+  color: lightblue;
+  text-decoration: none;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-pink{
+  background-color: #E44760;
+}
+.bg-blue-fb{
+  background-color: #3B5998;
+}
+.bg-orange{
+  background-color: #F28C31;
+}
+.color-white{
+  color: white;
+}
+.margin-x-20{
+  margin-right: 20px;
+}
+.col-md-3{
+  width: calc(100% / 3);
+}
+.col-lg-3{
+  width: calc(100% / 3);
+}
+
+
+button{
+  padding: 5px 20px 7px;
+  &.common-button{
+    color: black;
+    background-color: white;
+    margin: 15px 0px;
+  }
+}
+.fixed{
+  position: fixed;
+}
+.pad-x-15{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.pad-x-10{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.col-12{
+  padding: 0px;
+}
+
+.background{
+  position: relative;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.sezione{
+  height: 100%;
+}
+
+.row{
+  height:100%;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+.col-sm-12{
+  width: 100%;
+}
+.foto{
+  height: 200px;
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.mg-20-y{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bg{
+  height: 450px;
+  @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+    height: 350px;
+  }
+  @media screen and (min-width: $breackpoint-lg){
+    height: 350px;
+  }
+}
+.learn{
+  height: 350px;
+  color: white;
+}
+.margin-2-x{
+  margin: 0 2%;
+}
+.flex-left-center-column{
+  @include flex-col-align-cc-left;
+}

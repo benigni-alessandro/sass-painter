@@ -1,0 +1,77 @@
+.navbar{
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  .container-fluid{
+    width: 100%;
+    height: 50px;
+    @include flex-r-align;
+    @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+      @include flex-r-align-cc;
+    }
+    @media screen and (min-width: $breackpoint-lg){
+      @include flex-r-align-cc;
+    }
+    .navbar-brand{
+      img{
+        @include position-center;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          @include position-inherit;
+          margin-right: 30px;
+        }
+        @media screen and (min-width: $breackpoint-lg){
+          @include position-inherit;
+          margin-right: 30px;
+        }
+      }
+    button.navbar-toggler{
+      color: transparent;
+        @include position-left;
+        i.fas.fa-bars{
+          color: white;
+        }
+      }
+      .navbar-collapse{
+        flex-grow: 0;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          width: inherit;
+          display: flex;
+          margin-right: 0px;
+          flex-grow: 0!important;
+        }
+        @media screen and (min-width: $breackpoint-lg){
+          width: auto;
+          display: flex;
+          margin-right: 0px;
+          flex-grow: 0!important;
+        }
+      }
+    }
+  }
+}
+
+  // .navbar{
+  //   z-index: 3;
+  //   width: 100%;
+  //   height: 50px;
+  //   .container-fluid{
+  //     width: 100%;
+  //     height: 50px;
+  //     @include flex-r-align;
+  //     .navbar-brand{
+  //       img{
+  //         @include position-inherit;
+  //       }
+  //     }
+  //     button.navbar-toggler{
+  //       color: transparent;
+  //       @include position-left;
+  //       i.fas.fa-bars{
+  //         color: white;
+  //       }
+  //     }
+  //     .navbar-collapse{
+  //       @include flex-r-align;
+  //     }
+  //   }
+  // }
