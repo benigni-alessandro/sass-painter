@@ -112,3 +112,7 @@ button{
 .flex-left-center-column{
   @include flex-col-align-cc-left;
 }
+.absolute{
+  position: absolute;
+  top: 11px;
+}

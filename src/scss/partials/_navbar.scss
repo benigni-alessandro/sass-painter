@@ -7,7 +7,7 @@
     height: 50px;
     @include flex-r-align;
     @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-      @include flex-r-align-cc;
+      @include flex-r-align-spar;
     }
     @media screen and (min-width: $breackpoint-lg){
       @include flex-r-align-cc;
@@ -24,11 +24,10 @@
           margin-right: 30px;
         }
       }
-    button.navbar-toggler{
-      color: transparent;
-      @include position-left;
-        i.fas.fa-bars{
-          color: white;
+      button.left-button{
+
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+        @include position-left ;
         }
       }
       .navbar-collapse{

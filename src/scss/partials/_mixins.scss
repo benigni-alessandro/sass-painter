@@ -26,8 +26,15 @@
   align-items: flex-start;
   justify-content: center;
 }
+@mixin flex-r-align-spar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 @mixin flex-r-align-cc{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

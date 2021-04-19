@@ -87,56 +87,65 @@
   &.credits{
     background-color: lightgrey;
     height: auto;
-    .col-lg-3{
+    .row{
+      @include flex-col-align-cc-left;
       @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-        width: calc(100% / 4);
+        @include flex-r-align-cc;
       }
       @media screen and (min-width: $breackpoint-lg){
-        width:  calc(100% / 4);
+        @include flex-r-align-cc;
       }
-      .list{
-        padding-bottom: 30px;
-        ul{
-          list-style: none;
-          li{
-            &.first-of-list{
-              color: black;
-              font-size: 1.1rem;
-            }
-            a{
-              text-decoration: none;
-              color: black;
-              font-weight: lighter;
+      .col-lg-3{
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          width: calc(100% / 4);
+        }
+        @media screen and (min-width: $breackpoint-lg){
+          width:  calc(100% / 4);
+        }
+        .list{
+          padding-bottom: 30px;
+          ul{
+            list-style: none;
+            li{
+              &.first-of-list{
+                color: black;
+                font-size: 1.1rem;
+              }
+              a{
+                text-decoration: none;
+                color: black;
+                font-weight: lighter;
+              }
             }
           }
         }
       }
-    }
-    .social{
-      @include flex-r-align-cc-left;
-      padding: 0 10px;
-      margin-bottom: 30px;
-      @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
-        @include flex-r-align-cc-right;
-      }
-      @media screen and (min-width: $breackpoint-lg){
-        @include flex-r-align-cc-right;
-      }
-      .icona{
-        height: 30px;
-        width: 30px;
-        margin: 5px;
-        @include flex-r-align-cc;
-        i{
-          color: white;
-          font-size: 1.1rem;
+      .social{
+        @include flex-r-align-cc-left;
+        padding: 0 10px;
+        margin-bottom: 30px;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          @include flex-r-align-cc-right;
         }
-      }
-      svg{
-        height: 30px;
-        width: 30px;
-        border: 1px solid transparent;
-        margin: 5px;
+        @media screen and (min-width: $breackpoint-lg){
+          @include flex-r-align-cc-right;
+        }
+        .icona{
+          height: 30px;
+          width: 30px;
+          margin: 5px;
+          @include flex-r-align-cc;
+          i{
+            color: white;
+            font-size: 1.1rem;
+          }
+        }
+        svg{
+          height: 30px;
+          width: 30px;
+          border: 1px solid transparent;
+          margin: 5px;
+        }
       }
     }
   }
